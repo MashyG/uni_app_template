@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:vue/vue3-recommended",
+        "standard",
+        "eslint-config-prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "vue",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-console": ["error", { "allow": ["warn", "error"] }],
+        "vue/multi-word-component-names": "off",
+        "@typescript-eslint/camelcase": "off",
+        "camelcase": "off",
+        "no-param-reassign": "warn",
+        "max-params": "warn"
+    },
+    "parser": "vue-eslint-parser",
+    "globals": {
+        "uni": "readonly",
+        "wx": "readonly",
+        "getCurrentPages": "readonly"
+    }
+}
