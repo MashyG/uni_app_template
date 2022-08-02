@@ -22,9 +22,9 @@ pnpm run dev:mp-weixin
 # 依赖
 
 - [ ] 引入 eslint
-- [ ] 引入 stylelint
-- [ ] 引入 prettier
-- [ ] 引入 vitest
+- [ ] 引入 stylelint 配置标砖css
+- [ ] 引入 prettier 格式化代码
+- [ ] 引入 vitest 单元测试
 - [ ] 引入 tailwindcss
 
 ## 引入 eslint
@@ -47,7 +47,9 @@ pnpm add -D eslint-plugin-vue@latest @typescript-eslint/eslint-plugin@latest esl
 
 ```
 
-## 引入 stylelint
+## 引入 stylelint 配置标砖css
+
+[stylelint.config.js](https://stylelint.io/user-guide/configure/)
 
 ```csharp
 # 添加 stylelint 依赖
@@ -59,7 +61,7 @@ pnpm add -D stylelint stylelint-config-rational-order stylelint-config-recommend
 
 ```
 
-## 引入 prettier
+## 引入 prettier 格式化代码
 
 ```csharp
 # 添加 prettier 依赖
@@ -69,7 +71,7 @@ pnpm add -D prettier eslint-config-prettier eslint-plugin-prettier stylelint-con
 
 ```
 
-## 引入 vitest
+## 引入 vitest 单元测试
 
 ```csharp
 # 添加 prettier 依赖
@@ -89,12 +91,10 @@ pnpm add -D vitest
 # 添加 tailwindcss 依赖
 pnpm add -D tailwindcss@latest postcss@latest autoprefixer@latest
 
-# 根目录下，新建 tailwindcss.config.js 文件,添加内容配置，以及其他样式自定义内容
-{
-  content: ['./index.html', './src/**/*.{html,js,ts,jsx,tsx,vue}']
-}
+# 初始化 tailwindcss，生成 tailwind.config.js 和 postcss.config.js
+npx tailwindcss init -p
 
-# 在 vite.config.js 文件下，添加 postcss 相关配置；具体详情查看 vite.config.js 文件
+# 在 vite.config.js 文件下，相关配置编译到 h5 注意事项；具体详情查看 vite.config.js 文件
 
 # 安装两个依赖文件
 pnpm add -D weapp-tailwindcss-webpack-plugin postcss-rem-to-responsive-pixel
