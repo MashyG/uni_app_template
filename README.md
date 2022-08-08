@@ -109,3 +109,11 @@ pnpm add -D weapp-tailwindcss-webpack-plugin postcss-rem-to-responsive-pixel
 # 使用例子(src/pages/index/index.vue)
 
 ```
+
+## 推荐阅读
+
+- [eslint](https://eslint.org/docs/latest/user-guide/configuring/configuration-files)
+- [stylelint](https://stylelint.io/user-guide/get-started)
+- [prettier](https://prettier.io/docs/en/install.html)
+- [vitest](https://vitest.dev/guide/)
+- [tailwindcss](https://developers.weixin.qq.com/community/develop/article/doc/0006ea58fd0e600818fdc77275ac13)
