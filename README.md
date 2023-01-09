@@ -21,11 +21,11 @@ pnpm run dev:mp-weixin
 
 # 依赖
 
-- [ ] 引入 eslint
-- [ ] 引入 stylelint 配置标砖css
-- [ ] 引入 prettier 格式化代码
-- [ ] 引入 vitest 单元测试
-- [ ] 引入 tailwindcss
+- [x] 引入 eslint
+- [x] 引入 stylelint 配置标砖css
+- [x] 引入 prettier 格式化代码
+- [x] 引入 vitest 单元测试
+- [x] 引入 tailwindcss
 
 ## 引入 eslint
 
